@@ -1,0 +1,21 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "4rb-Om-ZHg"; */
+"4rb-Om-ZHg.text" = "Label";
+
+/* Class = "UITabBarItem"; title = "TV Guide"; ObjectID = "FS6-JT-stI"; */
+"FS6-JT-stI.title" = "TV Guide";
+
+/* Class = "UIButton"; normalTitle = "Mo, 29.07"; ObjectID = "G5E-zx-deN"; */
+"G5E-zx-deN.normalTitle" = "Mo, 29.07";
+
+/* Class = "UIButton"; normalTitle = "SO. 28.07"; ObjectID = "VIl-wp-bSs"; */
+"VIl-wp-bSs.normalTitle" = "SO. 28.07";
+
+/* Class = "UIBarButtonItem"; title = "Fertig"; ObjectID = "elf-RC-aIt"; */
+"elf-RC-aIt.title" = "Fertig";
+
+/* Class = "UIButton"; normalTitle = "Mo, 29.07"; ObjectID = "hFH-W1-jLR"; */
+"hFH-W1-jLR.normalTitle" = "Mo, 29.07";
+
+/* Class = "UIViewController"; title = "TVGuide View Controller"; ObjectID = "xIZ-PP-SHQ"; */
+"xIZ-PP-SHQ.title" = "TVGuide View Controller";

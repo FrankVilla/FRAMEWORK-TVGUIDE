@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="UQV-SI-Ra9" customClass="FloatingOverlayView" customModule="tv_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="49"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="heQ-9y-ZCQ">
+                    <rect key="frame" x="5" y="24.5" width="295" height="24.5"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJp-LU-BTA">
+                    <rect key="frame" x="5" y="4.5" width="295" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="bOP-BU-PO6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
+                    <color key="textColor" red="0.66666668650000005" green="0.66666668650000005" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="YJp-LU-BTA" secondAttribute="bottom" id="4RP-C8-ubo"/>
+                <constraint firstItem="heQ-9y-ZCQ" firstAttribute="leading" secondItem="Hgg-cV-vZh" secondAttribute="leading" constant="5" id="Euh-2a-vqI"/>
+                <constraint firstItem="heQ-9y-ZCQ" firstAttribute="top" secondItem="UQV-SI-Ra9" secondAttribute="centerY" id="NcW-6r-SRk"/>
+                <constraint firstAttribute="trailing" secondItem="YJp-LU-BTA" secondAttribute="trailing" id="jFL-Eu-8DF"/>
+                <constraint firstItem="Hgg-cV-vZh" firstAttribute="bottom" secondItem="heQ-9y-ZCQ" secondAttribute="bottom" id="jVM-ae-d8a"/>
+                <constraint firstItem="heQ-9y-ZCQ" firstAttribute="trailing" secondItem="Hgg-cV-vZh" secondAttribute="trailing" id="qnj-Td-rQu"/>
+                <constraint firstItem="YJp-LU-BTA" firstAttribute="leading" secondItem="UQV-SI-Ra9" secondAttribute="leading" constant="5" id="yOP-3f-DAP"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Hgg-cV-vZh"/>
+            <connections>
+                <outlet property="dateLabel" destination="YJp-LU-BTA" id="nkN-mm-ZL9"/>
+                <outlet property="titleLabel" destination="heQ-9y-ZCQ" id="6u0-nn-ypl"/>
+            </connections>
+            <point key="canvasLocation" x="54" y="-24"/>
+        </collectionReusableView>
+    </objects>
+</document>

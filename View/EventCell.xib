@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQ9-f1-XDa" customClass="EventCell" customModule="tv_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="266" height="49"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="266" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJp-LU-BTA" customClass="StyledLabel" customModule="tv_ios" customModuleProvider="target">
+                        <rect key="frame" x="19" y="5" width="0.0" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="z0q-Kg-oih"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.66666668650000005" green="0.66666668650000005" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="heQ-9y-ZCQ" customClass="StyledLabel" customModule="tv_ios" customModuleProvider="target">
+                        <rect key="frame" x="19" y="30" width="0.0" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="28" id="nT8-vh-chg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yk-uQ-DBB" customClass="StyledButton" customModule="tv_ios" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="266" height="49"/>
+                        <gestureRecognizers/>
+                    </button>
+                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recording-state" translatesAutoresizingMaskIntoConstraints="NO" id="uZn-up-vqh" userLabel="RecordingState">
+                        <rect key="frame" x="5" y="32" width="10" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="10" id="VvV-Tj-dpw"/>
+                            <constraint firstAttribute="height" constant="10" id="nMI-Vz-pzS"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="1yk-uQ-DBB" firstAttribute="leading" secondItem="XQ9-f1-XDa" secondAttribute="leading" id="0Fc-iO-XCz"/>
+                <constraint firstAttribute="bottom" secondItem="1yk-uQ-DBB" secondAttribute="bottom" id="6Rz-VH-4Xd"/>
+                <constraint firstItem="YJp-LU-BTA" firstAttribute="leading" secondItem="XQ9-f1-XDa" secondAttribute="leading" constant="19" id="D2h-Q7-YGh"/>
+                <constraint firstItem="1yk-uQ-DBB" firstAttribute="top" secondItem="XQ9-f1-XDa" secondAttribute="top" id="FDd-kI-pbU"/>
+                <constraint firstItem="heQ-9y-ZCQ" firstAttribute="centerY" secondItem="uZn-up-vqh" secondAttribute="centerY" id="I3N-d0-Wuo"/>
+                <constraint firstItem="uZn-up-vqh" firstAttribute="leading" secondItem="XQ9-f1-XDa" secondAttribute="leading" constant="5" id="N2T-mg-cS8"/>
+                <constraint firstItem="heQ-9y-ZCQ" firstAttribute="top" secondItem="YJp-LU-BTA" secondAttribute="bottom" constant="5" id="Tq1-88-dK0"/>
+                <constraint firstAttribute="bottom" secondItem="heQ-9y-ZCQ" secondAttribute="bottom" constant="5" id="Z74-bp-w7h"/>
+                <constraint firstItem="heQ-9y-ZCQ" firstAttribute="leading" secondItem="uZn-up-vqh" secondAttribute="trailing" constant="4" id="jAV-hz-Fz8"/>
+                <constraint firstItem="YJp-LU-BTA" firstAttribute="top" secondItem="XQ9-f1-XDa" secondAttribute="topMargin" id="s6r-p6-AQe"/>
+                <constraint firstAttribute="trailing" secondItem="1yk-uQ-DBB" secondAttribute="trailing" id="wTA-vm-OWU"/>
+            </constraints>
+            <edgeInsets key="layoutMargins" top="5" left="5" bottom="5" right="5"/>
+            <size key="customSize" width="266" height="49"/>
+            <connections>
+                <outlet property="dateLabel" destination="heQ-9y-ZCQ" id="bhe-wl-JUE"/>
+                <outlet property="recordingStatusIcon" destination="uZn-up-vqh" id="jZf-fL-oQY"/>
+                <outlet property="titleLabel" destination="YJp-LU-BTA" id="zf5-H5-IGq"/>
+            </connections>
+            <point key="canvasLocation" x="78.260869565217391" y="-94.084821428571431"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="recording-state" width="20" height="20"/>
+    </resources>
+</document>
